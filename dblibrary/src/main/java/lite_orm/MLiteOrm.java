@@ -17,14 +17,12 @@ public class MLiteOrm {
     private static int dbVersion = 1;
     private static boolean debug = false;
 
-
     public static void initLiteOrm(Context context, String dataBaseName, int dbVersion, boolean debug) {
         MLiteOrm.dataBaseName = dataBaseName;
         MLiteOrm.context = context;
         MLiteOrm.dbVersion = dbVersion;
         MLiteOrm.debug = debug;
     }
-
 
     public static LiteOrm getInstance() {
         if (instance == null) {
